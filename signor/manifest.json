@@ -1,0 +1,25 @@
+{
+    "version": "1.0",
+    "__metadata__": {
+        "name": "SIGNOR — Signaling Network Open Resource",
+        "description": "Manually curated causal signaling interactions between proteins, protein families, complexes, small molecules, stimuli, and phenotypes, with mechanism, effect, residue, cell/tissue context, and confidence scores.",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "url": "https://signor.uniroma2.it/",
+        "publication": {
+            "doi": "10.1093/nar/gkaf1237",
+            "pmid": "41243950",
+            "pmc": "PMC12807704",
+            "url": "https://doi.org/10.1093/nar/gkaf1237"
+        }
+    },
+    "dumper": {
+        "data_url": "https://signor.uniroma2.it/getData.php?organism=9606",
+        "uncompress": false,
+        "release": "version:get_release"
+    },
+    "uploader": {
+        "parser": "parser:load_data",
+        "on_duplicates": "error"
+    }
+}

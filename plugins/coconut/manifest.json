@@ -1,0 +1,25 @@
+{
+    "version": "1.0",
+    "__metadata__": {
+        "name": "COCONUT — Collection of Open Natural Products",
+        "description": "Natural product structures with molecular properties, chemical classification, NP classifier annotations, organisms, and cross-references from 63+ open databases.",
+        "license": "CC0 1.0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "url": "https://coconut.naturalproducts.net",
+        "publication": {
+            "doi": "10.1093/nar/gkae1063",
+            "pmid": "39588778",
+            "pmc": "PMC11701633",
+            "url": "https://doi.org/10.1093/nar/gkae1063"
+        }
+    },
+    "dumper": {
+        "data_url": "https://coconut.s3.uni-jena.de/prod/downloads/2026-05/coconut_csv-05-2026.zip",
+        "uncompress": true,
+        "release": "version:get_release"
+    },
+    "uploader": {
+        "parser": "parser:load_data",
+        "on_duplicates": "error"
+    }
+}

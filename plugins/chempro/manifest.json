@@ -1,0 +1,35 @@
+{
+    "version": "1.0",
+    "requires": ["pandas"],
+    "__metadata__": {
+        "name": "Chem(Pro)2",
+        "description": "Atlas of chemoproteomic probes (CPPs) — covalent and photoaffinity probes that label human proteins in living cells, with probe structures, competitor compounds, and experiment-level probe-protein interaction data.",
+        "license": "CC BY-NC 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "url": "https://chemprosquare.idrblab.net/",
+        "publication": {
+            "doi": "10.1093/nar/gkae943",
+            "pmid": "39436046",
+            "pmc": "PMC11701659"
+        }
+    },
+    "dumper": {
+        "data_url": [
+            "https://chemprosquare.idrblab.net/sites/default/files/download/general_probe.txt",
+            "https://chemprosquare.idrblab.net/sites/default/files/download/general_competitor.txt",
+            "https://chemprosquare.idrblab.net/sites/default/files/download/chemoproteomics_experiment.txt",
+            "https://chemprosquare.idrblab.net/sites/default/files/download/general_cell.txt",
+            "https://chemprosquare.idrblab.net/sites/default/files/download/general_target_enzyme.txt",
+            "https://chemprosquare.idrblab.net/sites/default/files/download/general_target_gpcr.txt",
+            "https://chemprosquare.idrblab.net/sites/default/files/download/general_target_immunoglobulin.txt",
+            "https://chemprosquare.idrblab.net/sites/default/files/download/general_target_transporter.txt",
+            "https://chemprosquare.idrblab.net/sites/default/files/download/general_target_other.txt"
+        ],
+        "uncompress": false,
+        "release": "version:get_release"
+    },
+    "uploader": {
+        "parser": "parser:load_data",
+        "on_duplicates": "error"
+    }
+}

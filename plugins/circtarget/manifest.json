@@ -1,0 +1,26 @@
+{
+    "version": "1.0",
+    "requires": ["rarfile"],
+    "__metadata__": {
+        "name": "CircTarget",
+        "description": "Experimentally-derived circRNA-target RNA interactions at single-nucleotide resolution, covering 132,517 high-confidence interactions across 13 human/mouse cell lines and hippocampal tissues.",
+        "license": "Unspecified (freely accessible per NAR 2026 publication)",
+        "license_url": "https://circtarget.cn",
+        "url": "https://circtarget.cn",
+        "publication": {
+            "doi": "10.1093/nar/gkaf1280",
+            "pmid": "41468912",
+            "pmc": "PMC12807748",
+            "url": "https://doi.org/10.1093/nar/gkaf1280"
+        }
+    },
+    "dumper": {
+        "data_url": "https://circtarget.cn/static/download/all.rar",
+        "uncompress": false,
+        "release": "version:get_release"
+    },
+    "uploader": {
+        "parser": "parser:load_data",
+        "on_duplicates": "error"
+    }
+}

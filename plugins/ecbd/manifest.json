@@ -1,0 +1,31 @@
+{
+    "version": "1.0",
+    "__metadata__": {
+        "name": "ECBD — European Chemical Biology Database",
+        "description": "107,000+ quality-controlled small molecule compounds from the EU-OPENSCREEN research infrastructure, annotated with physicochemical properties, sub-library membership, and cross-references to PubChem, ChEMBL, and ZINC.",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "url": "https://ecbd.eu",
+        "publication": {
+            "doi": "10.1093/nar/gkae904",
+            "pmid": "39441065",
+            "pmc": "PMC11701612",
+            "url": "https://doi.org/10.1093/nar/gkae904"
+        }
+    },
+    "dumper": {
+        "data_url": [
+            "https://ecbd.eu/static/core/compounds/bioactives.csv",
+            "https://ecbd.eu/static/core/compounds/fragments.csv",
+            "https://ecbd.eu/static/core/compounds/nuisance_set.csv",
+            "https://ecbd.eu/static/core/compounds/academic.csv",
+            "https://ecbd.eu/static/core/compounds/diverse_library.csv"
+        ],
+        "uncompress": false,
+        "release": "version:get_release"
+    },
+    "uploader": {
+        "parser": "parser:load_data",
+        "on_duplicates": "error"
+    }
+}

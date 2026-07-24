@@ -1,0 +1,28 @@
+{
+    "version": "1.0",
+    "requires": ["pandas", "openpyxl"],
+    "__metadata__": {
+        "name": "Gene Therapy Omnibus (GTO)",
+        "description": "Comprehensive gene therapy resource with 6,333 clinical trial records and 3,466 transcriptome profiles covering 614 altered genes, 22 therapy types, disease MONDO/DOID cross-references, and clinical outcomes.",
+        "license": "Academic and research use only",
+        "license_url": "http://www.inbirg.com/gto/download",
+        "url": "http://www.inbirg.com/gto/",
+        "publication": {
+            "doi": "10.1093/nar/gkae1051",
+            "pmid": "39540438",
+            "pmc": "PMC11701634"
+        }
+    },
+    "dumper": {
+        "data_url": [
+            "http://www.inbirg.com/gto/download/clinical_data_download",
+            "http://www.inbirg.com/gto/download/indication"
+        ],
+        "uncompress": false,
+        "release": "version:get_release"
+    },
+    "uploader": {
+        "parser": "parser:load_data",
+        "on_duplicates": "error"
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "version": "1.0",
+    "requires": ["pandas", "openpyxl"],
+    "__metadata__": {
+        "name": "AgeAnnoMO",
+        "description": "Multi-omics annotation of animal ageing: age-related differential gene expression, protein abundance, metabolite levels, and lifespan-correlated genes across 50 species and 10 aging hallmarks.",
+        "license": "CC BY-NC 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "url": "https://relab.xidian.edu.cn/AgeAnnoMO/#/",
+        "publication": {
+            "doi": "10.1093/nar/gkad884",
+            "pmid": "37850649",
+            "pmc": "PMC10767957"
+        }
+    },
+    "dumper": {
+        "data_url": [
+            "https://raw.githubusercontent.com/vikkihuangkexin/AgeAnnoMO/master/Genomic%20instability/Differential%20expression.xlsx",
+            "https://raw.githubusercontent.com/vikkihuangkexin/AgeAnnoMO/master/Loss%20of%20proteostasis/Differential%20protein.xlsx",
+            "https://raw.githubusercontent.com/vikkihuangkexin/AgeAnnoMO/master/Dysregulated%20metabolism%20in%20aging/Differential%20metabolite.xlsx",
+            "https://raw.githubusercontent.com/vikkihuangkexin/AgeAnnoMO/master/Lifespan%20regulators/Lifespan%20regulators.xlsx"
+        ],
+        "uncompress": false,
+        "release": "version:get_release"
+    },
+    "uploader": {
+        "parser": "parser:load_data",
+        "on_duplicates": "ignore"
+    }
+}

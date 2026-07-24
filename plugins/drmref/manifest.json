@@ -1,0 +1,31 @@
+{
+    "version": "1.0",
+    "requires": ["pandas"],
+    "__metadata__": {
+        "name": "DRMref — Drug Resistance Mechanism reference",
+        "description": "Single-cell RNA-seq-derived reference atlas of drug resistance mechanisms in human cancer: differentially expressed genes (DEGs) between resistant and sensitive cell populations across 42 scRNA-seq datasets / 30 studies, cross-referenced with established resistance-mechanism gene classifications, resistance-associated microRNAs, and transcription factor regulators.",
+        "license": "CC BY-NC 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "url": "https://ccsm.uth.edu/DRMref/",
+        "publication": {
+            "doi": "10.1093/nar/gkad1087",
+            "pmid": "37986230",
+            "pmc": "PMC10767840"
+        }
+    },
+    "dumper": {
+        "data_url": [
+            "https://ccsm.uth.edu/DRMref/table_summary/gene_summary.txt",
+            "https://ccsm.uth.edu/DRMref/table_summary/Existed_drug_mechanism_gene_file.csv",
+            "https://ccsm.uth.edu/DRMref/table_summary/miRNA_summary.txt",
+            "https://ccsm.uth.edu/DRMref/table_summary/tf_summary.txt",
+            "https://ccsm.uth.edu/DRMref/table_summary/enrichment_pathway_summary.txt"
+        ],
+        "uncompress": false,
+        "release": "version:get_release"
+    },
+    "uploader": {
+        "parser": "parser:load_data",
+        "on_duplicates": "error"
+    }
+}

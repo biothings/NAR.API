@@ -1,0 +1,25 @@
+{
+    "version": "1.0",
+    "requires": ["requests"],
+    "__metadata__": {
+        "name": "Open Genes",
+        "description": "Curated database of human genes experimentally or bioinformatically linked to aging and longevity, with lifespan-modulation experiment evidence, aging mechanisms, functional gene clusters, and ICD-10/11 disease associations.",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "url": "https://open-genes.com/",
+        "publication": {
+            "doi": "10.1093/nar/gkad712",
+            "pmid": "37665017",
+            "pmc": "PMC10768108"
+        }
+    },
+    "dumper": {
+        "data_url": "https://open-genes.com/api/gene/search?pageSize=5000&page=1",
+        "uncompress": false,
+        "release": "version:get_release"
+    },
+    "uploader": {
+        "parser": "parser:load_data",
+        "on_duplicates": "error"
+    }
+}

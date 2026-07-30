@@ -1,0 +1,32 @@
+{
+    "version": "1.0",
+    "__metadata__": {
+        "name": "ncRNADrug",
+        "description": "Curated and computationally predicted associations between non-coding RNAs (miRNA/lncRNA/circRNA) and drugs, covering ncRNAs linked to drug resistance/response and ncRNAs targeted by drugs.",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "url": "http://www.jianglab.cn/ncRNADrug/",
+        "publication": {
+            "doi": "10.1093/nar/gkad1042",
+            "pmid": "38109296",
+            "pmc": "PMC10767907"
+        }
+    },
+    "dumper": {
+        "data_url": [
+            "http://www.jianglab.cn/ncRNADrug/data_download/DR_Curated.txt",
+            "http://www.jianglab.cn/ncRNADrug/data_download/DR_GEO.txt",
+            "http://www.jianglab.cn/ncRNADrug/data_download/DR_NCI60.txt",
+            "http://www.jianglab.cn/ncRNADrug/data_download/DR_CCLE.txt",
+            "http://www.jianglab.cn/ncRNADrug/data_download/DT_Curated.txt",
+            "http://www.jianglab.cn/ncRNADrug/data_download/DT_GEO.txt",
+            "http://www.jianglab.cn/ncRNADrug/data_download/DT_CMap.txt"
+        ],
+        "uncompress": false,
+        "release": "version:get_release"
+    },
+    "uploader": {
+        "parser": "parser:load_data",
+        "on_duplicates": "ignore"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "version": "1.0",
+    "requires": ["openpyxl"],
+    "__metadata__": {
+        "name": "PersADE",
+        "description": "Drug adverse drug event (ADE) association database derived from mtADENet. Maps 8,802 drugs (by InChIKey) to 4,380 adverse drug events (by MeSH ID) with ATC classification and drug type annotations. Note: available download (dated 2023-06-27) represents the older mtADENet dataset (~461K associations); full PersADE personalized data (4M associations with demographic stratification) is not yet available for bulk download.",
+        "license": "CC BY-NC 4.0 (assumed consistent with idrblab databases)",
+        "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "url": "https://persade.idrblab.net/",
+        "publication": {
+            "doi": "10.1093/nar/gkaf1095",
+            "pmid": "41217945"
+        }
+    },
+    "dumper": {
+        "data_url": [
+            "https://persade.idrblab.net/download/mtADENet/Global_associations_20230627.xlsx",
+            "https://persade.idrblab.net/download/mtADENet/Global_Drug_20230627.xlsx",
+            "https://persade.idrblab.net/download/mtADENet/Global_ADE_20230627.xlsx"
+        ],
+        "uncompress": false,
+        "release": "version:get_release"
+    },
+    "uploader": {
+        "parser": "parser:load_data",
+        "on_duplicates": "error"
+    }
+}

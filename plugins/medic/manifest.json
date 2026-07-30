@@ -1,0 +1,29 @@
+{
+    "version": "1.0",
+    "requires": ["pandas", "openpyxl"],
+    "__metadata__": {
+        "name": "MeDIC",
+        "description": "Government-regulatory-source drug indications and contraindications (FDA, EMA, PMDA) ontology-mapped to CHEBI/MONDO; 2,295 drugs with indications and 994 with contraindications across 2,688 diseases.",
+        "license": "CC0 1.0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "url": "https://medic.renci.org/",
+        "publication": {
+            "doi": "10.1093/nar/gkaf1312",
+            "pmid": "41385096",
+            "pmc": "PMC12807713"
+        }
+    },
+    "dumper": {
+        "data_url": [
+            "https://github.com/everycure-org/matrix-drug-list/releases/latest/download/drugList.tsv",
+            "https://github.com/everycure-org/matrix-indication-list/releases/latest/download/indicationList.xlsx",
+            "https://github.com/everycure-org/matrix-indication-list/releases/latest/download/contraindicationList.xlsx"
+        ],
+        "uncompress": false,
+        "release": "version:get_release"
+    },
+    "uploader": {
+        "parser": "parser:load_data",
+        "on_duplicates": "error"
+    }
+}

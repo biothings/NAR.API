@@ -1,0 +1,24 @@
+{
+    "version": "1.0",
+    "__metadata__": {
+        "name": "PRIME",
+        "description": "Curated 16S rRNA microbiome database of 53,449 human samples from 111 public studies with harmonized phenotypic and contextual metadata across 93 body sites and 101 disease categories.",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "url": "https://primedb.sjtu.edu.cn",
+        "publication": {
+            "doi": "10.1093/nar/gkaf1057",
+            "pmid": "41171140",
+            "pmc": "PMC12807763"
+        }
+    },
+    "dumper": {
+        "data_url": "https://zenodo.org/records/15711237/files/samples_metadata.csv?download=1",
+        "uncompress": false,
+        "release": "version:get_release"
+    },
+    "uploader": {
+        "parser": "parser:load_data",
+        "on_duplicates": "error"
+    }
+}

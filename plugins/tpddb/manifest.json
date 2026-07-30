@@ -1,0 +1,37 @@
+{
+    "version": "1.0",
+    "requires": ["pandas"],
+    "__metadata__": {
+        "name": "TPDdb",
+        "description": "Comprehensive database of 28,000+ targeted protein degraders (PROTACs, molecular glues, LYTACs, ATTECs, AUTACs, AUTOTACs) with degrader-specific activity data (IC50, DC50, Dmax), UniProt target IDs, ligase annotations, ICD-11 disease associations, and PDB ternary complex structures.",
+        "license": "CC BY-NC 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "url": "https://idrblab.org/TPDdb/",
+        "publication": {
+            "doi": "10.1093/nar/gkaf996",
+            "pmid": "41091922",
+            "pmc": "PMC12807599"
+        }
+    },
+    "dumper": {
+        "data_url": [
+            "https://tpddb.idrblab.net/sites/files/tpd_download/PROTAC_main_table.txt",
+            "https://tpddb.idrblab.net/sites/files/tpd_download/MG_main_table.txt",
+            "https://tpddb.idrblab.net/sites/files/tpd_download/LYTAC_main_table.txt",
+            "https://tpddb.idrblab.net/sites/files/tpd_download/ATTEC_main_table.txt",
+            "https://tpddb.idrblab.net/sites/files/tpd_download/AUTAC_main_table.txt",
+            "https://tpddb.idrblab.net/sites/files/tpd_download/AUTOTAC_main_table.txt",
+            "https://tpddb.idrblab.net/sites/files/tpd_download/PROTAC_activity.txt",
+            "https://tpddb.idrblab.net/sites/files/tpd_download/MG_activity.txt",
+            "https://tpddb.idrblab.net/sites/files/tpd_download/Lysosome-based_TPD_activity.txt",
+            "https://tpddb.idrblab.net/sites/files/tpd_download/TPD_Related_Diseases.txt",
+            "https://tpddb.idrblab.net/sites/files/tpd_download/TPD_PDB.txt"
+        ],
+        "uncompress": false,
+        "release": "version:get_release"
+    },
+    "uploader": {
+        "parser": "parser:load_data",
+        "on_duplicates": "error"
+    }
+}
